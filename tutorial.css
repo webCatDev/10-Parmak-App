@@ -1,0 +1,89 @@
+
+
+
+
+
+/* Canlı Klavye */
+#aktarma, #parmak,#parmak2,#shift-parmak{background:url('/_img/el.png')}
+.canli-klavye{width:800px;height:191px;margin:0 auto;background-position:0 0;position:relative}
+
+.klasik-el{position:absolute;top:0px;left:0;width:800px;height:191px;background:url("/_img/el.png")}
+.gercek-el{display:none;position:absolute;height:177px;width:800px;border-bottom:5px solid #ddd;top:69px}
+#aktarma{background-position:0 -191px;position:absolute;width:800px;height:177px}
+#parmak,#parmak2{display:none;position:absolute;width:30px;height:30px;background-position:-6px -374px}
+#shift-parmak{display:none;position:absolute;width:30px;height:30px;background-position:-48px -374px}
+#shift-parmak.sagda{bottom:83px;right:1px}
+#shift-parmak.solda{bottom:83px;left:1px}
+#shift-parmak.altta{bottom:43px;right:83px}
+#parmak2{bottom:43px;right:83px}
+#parmak.parmak1{bottom:83px;left:1px}
+#parmak.parmak2{bottom:96px;left:18px}
+#parmak.parmak3{bottom:100px;left:39px}
+#parmak.parmak4{bottom:94px;left:60px}
+#parmak.parmak5{bottom:94px;right:60px}
+#parmak.parmak6{bottom:100px;right:39px}
+#parmak.parmak7{bottom:96px;right:18px}
+#parmak.parmak8{bottom:83px;right:1px}
+#parmak.parmak9{bottom:43px;left:83px}
+#gel1,#gel2{position:absolute}
+#gel2{display:none;top:119px;left:379px}
+#gel-shift{display:none;position:absolute}
+#gel-shift.sagda{top:59px;left:553px}
+#gel-shift.sagda #nok1{left:10px}#gel-shift.sagda #nok2{top:22px;left:20px}#gel-shift.sagda #nok3{top:44px;left:30px}
+#gel-shift.solda{top:59px;left:161px}
+#gel-shift.solda #nok1{left:10px}#gel-shift.solda #nok2{top:22px}#gel-shift.solda #nok3{top:44px;left:-10px}
+#gel-shift.altta{top:119px;left:379px}
+#gel-shift.altta #nok1{left:10px}#gel-shift.altta #nok2{top:22px;left:20px}#gel-shift.altta #nok3{top:44px;left:30px}
+#nok1,#nok2,#nok3{position:absolute;width:12px;height:12px;background:#1AA1E1;border-radius:50%}
+#gel-shift #nok1,#gel-shift #nok2,#gel-shift #nok3{background:#ff6699!important}
+.el1 #nok1{left:10px}.el1 #nok2{top:22px}.el1 #nok3{top:44px;left:-10px}
+.el2 #nok1{left:10px}.el2 #nok2{top:22px;left:20px}.el2 #nok3{top:44px;left:30px}
+#gel1.parmak1{top:59px;left:161px}
+#gel1.parmak2{top:59px;left:188px}
+#gel1.parmak3{top:59px;left:226px}
+#gel1.parmak4{top:59px;left:287px}
+#gel1.parmak5{top:59px;left:427px}
+#gel1.parmak6{top:59px;left:488px}
+#gel1.parmak7{top:59px;left:526px}
+#gel1.parmak8{top:59px;left:553px}
+#gel1.parmak9{top:119px;left:338px}
+/* Javascript ile istemci tarafında oluşturulan canlı klavye */
+#klavye{transform:scale(1.15);box-sizing:content-box;width:550px;margin:40px auto;padding:2px;background:#DFD9D9;min-height:185px;border:1px solid #cfcfd0}
+#klavye .key{box-sizing:content-box;width:34px;height:34px;float:left;margin-top:1px;margin-left:1px;border-radius:2px;border:1px solid #d1d1d1;background:#fff;color:#979797;font-weight:bold;font-family:tahoma;font-size:13px}
+.shift-tek-sag,.back-tek-sag,.tabs,.caps,.shift-sol,.ctrl-sol,.win-sol,.alt-sag,.back,.entera,.enterb,.enterc,.shift-sag,.ctrl-sag,.shift-tek-sol{box-sizing:content-box;height:34px;font-family:tahoma;font-size:10px;color:#979797;background:#f5f5f5;float:left;border:1px solid #d1d1d1;line-height:34px;border-radius:2px;margin-top:1px;margin-left:1px;padding-left:5px}
+.tabs{width:46px}.caps{width:54px}.shift-sol{width:36px}.ctrl-sol{width:61px}.win-sol{width:61px}.alt-sag{width:61px}.back{width:60px}.shift-sag{width:90px}.ctrl-sag{width:61px}
+.shift-tek-sol{width:73px}.shift-tek-sag{width:90px}.back-tek-sag{width:72px}
+.entera{width:9px;border-radius:2px 0 0 2px;border-right:none;padding-left:0}
+.enterb{width:39px;border-radius:0 2px 0 0;border-left:none;border-bottom:none;margin-left:0px;padding-left:0}
+.enterc{width:39px;height:37px;line-height:0;text-align:center;border-radius:0 0 2px 2px;margin-left:2px;margin-top:-1px;border-top:none;padding-left:0}
+#klavye .key span{width:34px;float:left;text-align:center}
+.cc32{width:270px!important}
+.klavyeIsareti{background:#1AA1E1!important;color:white!important}
+.shiftIsaret{background:#ff6699!important;color:white!important}
+.klavyeYanlis{background-color:#C5606B!important;color:white!important}
+
+.tekrar-buton, .sonraki-buton{display:inline-block;font-size:13px;height:32px;line-height:32px;padding:0 12px;color:white}
+.tekrar-buton{background:#59B7A5}
+.sonraki-buton{background:#598BB7}
+.tekrar-buton:hover{background:#479183}
+.sonraki-buton:hover{background:#2C6F9D}
+
+
+/* Buton Resimleri */
+.oda,.odb,.oah,.oav,.oaw,.oay,.obo,.ocg,.och,.oci,.ocj,.ock,.ocu{float:left;width:16px;height:16px;background:url('/_img/tools.png')}
+.oav{background-position:-8px -72px}.oaw{background-position:-40px -72px}.oay{background-position:-104px -72px}.oah{background-position:-232px -8px}.obo{background-position:-296px -104px}.ocg{background-position:-200px -168px}.och{background-position:-232px -168px}.oci{background-position:-264px -168px}.ocj{background-position:-296px -168px}.ock{background-position:-8px -200px}.oda{background-position:-328px -168px}.odb{background-position:-328px -200px}.ocu{background-position:-296px -200px}
+
+/* Araç çubuğu butonları */
+.navi{box-sizing:content-box;position:relative;width:100%;height:35px;background:#ececec;padding-top:7px;border-bottom:2px solid #dadada}
+.navi .sol,.sol{box-sizing:content-box;margin-left:5px;width:16px;height:16px;padding:5px 8px;float:left;border:1px solid #B3B4B9;box-shadow:inset 1px 1px 0 #FFF;text-shadow:0 1px 0 #ffffff}
+.navi .orta,.orta{box-sizing:content-box;width:16px;height:16px;padding:5px 8px;float:left;border:1px solid #d0d0d0;border:1px solid #B3B4B9;border-left:none;box-shadow:inset 1px 1px 0 #FFF;text-shadow:0 1px 0 #ffffff}
+.navi .ortaR,.ortaR{box-sizing:content-box;margin-left:5px;width:16px;height:16px;padding:5px 8px;float:left;border:1px solid #B3B4B9;box-shadow:inset 1px 1px 0 #FFF;text-shadow:0 1px 0 #ffffff}
+.navi .sag,.sag{box-sizing:content-box;width:16px;height:16px;padding:5px 8px;float:left;border:1px solid #B3B4B9;border-left:none;box-shadow:inset 1px 1px 0 #FFF;text-shadow:0 1px 0 #ffffff}
+.navi .aktif,.aktif{background:#f5f5f5!important}
+.gradient{background:#eeeff3;background:-moz-linear-gradient(top,#eeeff3 0%,#d4d5da 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#eeeff3),color-stop(100%,#d4d5da));background:-webkit-linear-gradient(top,#eeeff3 0%,#d4d5da 100%);background:-o-linear-gradient(top,#eeeff3 0%,#d4d5da 100%);background:-ms-linear-gradient(top,#eeeff3 0%,#d4d5da 100%);background:linear-gradient(to bottom,#eeeff3 0%,#d4d5da 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeff3',endColorstr='#d4d5da',GradientType=0)}
+
+/* Fare ile üzerine gelindiğinde gözüken tooltip biçimlendirmeleri */
+#aToolTip{position:absolute;display:none;z-index:9999999;font-size:13px}
+.defaultTheme,.sagHiza{background:#598BB7;color:#fff;margin:0;padding:4px 15px}
+.defaultTheme{-moz-border-radius:6px 6px 6px 0;-webkit-border-radius:6px 6px 6px 0;-khtml-border-radius:6px 6px 6px 0;border-radius:6px 6px 6px 0}
+.sagHiza{-moz-border-radius:6px 6px 0 6px;-webkit-border-radius:6px 6px 0 6px;-khtml-border-radius:6px 6px 0 6px;border-radius:6px 6px 0 6px}
